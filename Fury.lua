@@ -733,7 +733,7 @@ end
 local function Fury_RunnerDetect(arg1, arg2)
 	--Thanks to HateMe
 	if arg1 == CHAT_RUNNER_FURY then
-		Fury_Runners[arg2] = true
+--		Fury_Runners[arg2] = true
 	end
 end
 --------------------------------------------------
@@ -1272,10 +1272,11 @@ function Fury()
 		  and Weapon()
 		  and UnitIsPlayer("target")
 		  and (UnitClass("target") == CLASS_HUNTER_FURY
-		  or UnitClass("target") == CLASS_PALADIN_FURY
+--		  or UnitClass("target") == CLASS_PALADIN_FURY
 		  or UnitClass("target") == CLASS_ROGUE_FURY
-		  or UnitClass("target") == CLASS_SHAMAN_FURY
-		  or UnitClass("target") == CLASS_WARRIOR_FURY)
+--		  or UnitClass("target") == CLASS_SHAMAN_FURY
+--		  or UnitClass("target") == CLASS_WARRIOR_FURY
+		)
 		  and UnitMana("player") >= 20
 		  and Fury_ImmuneDisarm[UnitName("target")] == nil
 		  and (ActiveStance() == 2
@@ -1671,7 +1672,7 @@ end
 --------------------------------------------------
 
 local function Fury_Charge()
-	local dist = Fury_Distance()
+	local dist = 20
 	if not UnitExists("target") and not FuryCombat then
 		if ActiveStance() ~= Fury_Configuration["PrimaryStance"] then
 			CastShapeshiftForm(Fury_Configuration["PrimaryStance"])
