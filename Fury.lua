@@ -13,7 +13,7 @@
 
 local function Fury_Configuration_Init()
 
-	FURY_VERSION = "1.17.3"
+	FURY_VERSION = "1.17.4"
 
 	if not Fury_Configuration then
 		Fury_Configuration = { }
@@ -961,6 +961,12 @@ function Fury()
 		elseif WWEnemies.WWCount ~= nil and (GetTime() - WWEnemies.WWTime) > 1 then
 			addEnemyCount(WWEnemies.WWCount)
 			WWEnemies.WWCount = nil
+		end
+
+		if IsTrinketEquipped("赞达拉英雄勋章") then
+			slot = IsTrinketEquipped("赞达拉英雄勋章")
+			Debug("赞达拉英雄勋章")
+			UseInventoryItem(slot)
 		end
 
 		-- 5, Dismount if mounted
