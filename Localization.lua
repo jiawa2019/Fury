@@ -7,6 +7,7 @@
 BINDING_NAME_FURY			= "一键站桩循环";
 BINDING_NAME_FURY_AOE			= "切换 AoE";
 BINDING_NAME_FURY_WW			= "切换 旋风斩";
+BINDING_NAME_FURY_FBRF			= "自动狂暴之怒"; --当有了的时候自动出发，提升怒气值,对面恐惧的时候建议关掉此开关
 BINDING_NAME_FURY_THREAT		= "切换英勇打击/顺劈斩使用";
 BINDING_NAME_FURY_DW                    = "切换死亡之愿";
 BINDING_HEADER_FURY			= "Fury";
@@ -28,6 +29,9 @@ RACE_ORC				= "兽人";
 RACE_TROLL				= "巨魔";
 RACE_DWARF				= "矮人";
 
+
+
+PRIOR_BERSERKER_RAGE = "自动狂暴之怒"
 ABILITY_BATTLE_SHOUT_FURY		= "战斗怒吼";
 ABILITY_BATTLE_STANCE_FURY		= "战斗姿态";
 ABILITY_BERSERKER_RAGE_FURY		= "狂暴之怒";

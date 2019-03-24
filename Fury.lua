@@ -13,7 +13,7 @@
 
 local function Fury_Configuration_Init()
 
-	FURY_VERSION = "1.17.4"
+	FURY_VERSION = "1.17.5"
 
 	if not Fury_Configuration then
 		Fury_Configuration = { }
@@ -125,6 +125,9 @@ local function Fury_Configuration_Init()
 	end
 	if Fury_Configuration[ABILITY_PIERCING_HOWL_FURY] == nil then
 		Fury_Configuration[ABILITY_PIERCING_HOWL_FURY] = true -- Piercing Howl
+	end
+	if Fury_Configuration[PRIOR_BERSERKER_RAGE] == nil then
+		Fury_Configuration[PRIOR_BERSERKER_RAGE] = true -- 自动掉血狂暴之怒
 	end
 	if Fury_Configuration[ABILITY_HEROIC_STRIKE_FURY] == nil then
 		Fury_Configuration[ABILITY_HEROIC_STRIKE_FURY] = true -- HS, to dump rage and at low levels
@@ -249,6 +252,7 @@ local function Fury_Configuration_Default()
 	Fury_Configuration[ITEM_TRINKET_EARTHSTRIKE] = true
 	Fury_Configuration[ITEM_TRINKET_KOTS] = true
 	Fury_Configuration[ITEM_TRINKET_SLAYERS_CREST] = true
+	Fury_Configuration[PRIOR_BERSERKER_RAGE] = true
 end
 
 --------------------------------------------------
@@ -928,13 +932,16 @@ end
 
 --------------------------------------------------
 
+local lastHealth = UnitHealth("player");
+
 function Fury()
+
 	if Fury_Configuration["Enabled"]
 	  and not UnitIsCivilian("target")
 	  and UnitClass("player") == CLASS_WARRIOR_FURY
 	  and FuryTalents then
 		local debuffImmobilizing = ImmobilizingDebuff()
-
+		local currentHealth = UnitHealth("player");
 		-- 1, Auto attack closest target
 		if Fury_Configuration["AutoAttack"] and not FuryAttack then
 			AttackTarget()
@@ -976,6 +983,14 @@ function Fury()
 			FuryMount = nil
 
 		-- 6, Use Berserker rage to interrupt fears and ....
+
+		elseif Fury_Configuration[PRIOR_BERSERKER_RAGE]
+			and ActiveStance() == 3
+			and currentHealth < lastHealth
+			and SpellReadyIn(ABILITY_BERSERKER_RAGE_FURY) == 0 then
+			CastSpellByName(ABILITY_BERSERKER_RAGE_FURY)
+			lastHealth = currentHealth
+
 		elseif Fury_Configuration[ABILITY_BERSERKER_RAGE_FURY]
 		  and (FuryIncapacitate
 		  or FuryFear)
@@ -1632,6 +1647,7 @@ function Fury()
 				FuryRageDumped = true
 			end
 		end
+
 	end
 end
 
@@ -2080,6 +2096,9 @@ function Fury_SlashCommand(msg)
 
 	elseif command == "whirlwind" then
 		toggleOption(ABILITY_WHIRLWIND_FURY, ABILITY_WHIRLWIND_FURY)
+
+	elseif command == "br" then
+		toggleOption(PRIOR_BERSERKER_RAGE, PRIOR_BERSERKER_RAGE)
 
 	elseif command == "toggle" then
 		toggleOption("Enabled", BINDING_HEADER_FURY)

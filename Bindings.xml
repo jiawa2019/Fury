@@ -8,6 +8,9 @@
 	<Binding name="FURY_WW" header="FURY">
 		Fury_SlashCommand("whirlwind")
 	</Binding>
+	<Binding name="FURY_FBRF" header="FURY">
+		Fury_SlashCommand("br")
+	</Binding>
 	<Binding name="FURY_THREAT" header="FURY">
 		Fury_SlashCommand("threat")
 	</Binding>
