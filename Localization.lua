@@ -14,6 +14,7 @@ BINDING_HEADER_FURY			= "Fury";
 BINDING_NAME_FURY_CHARGE		= "冲锋";
 BINDING_NAME_FURY_BLOCK			= "防御&急救";
 BINDING_NAME_FURY_SHOOT			= "射击";
+BINDING_NAME_FURY_SINGLE			= "单体输出";
 
 CLASS_DRUID_FURY			= "德鲁伊";
 CLASS_HUNTER_FURY			= "猎人";
@@ -126,6 +127,8 @@ CHAT_REPENTANCE2_FURY			= "忏悔效果从你身上消失了。";
 CHAT_ROCKET_HELM2_FURY			= "无畏冲锋效果从你身上消失了。";
 CHAT_LOST_FLURRY_FURY         = "乱舞效果从你身上消失了。"
 CHAT_GAINED_FLURRY_FURY       = "你获得了乱舞的效果。";
+CHAT_GAINED_BLOODRAGE_FURY    = "你获得了血性狂暴的效果。";
+CHAT_LOST_BLOODRAGE_FURY         = "血性狂暴效果从你身上消失了。"
 CHAT_IS_ON_CD_FURY			= "在CD中,替换吗?";
 CHAT_MISSING_SPELL_SHOOT_THROW_FURY	= "射击或投掷不在你的动作栏里";
 CHAT_MISSING_SPELL_INTERCEPT_CHARGE_FURY	= "拦截或冲锋不在你的动作栏里";
@@ -195,6 +198,7 @@ BOSS_MC_SHAZZRATH_FURY			= "沙斯拉尔";
 BOSS_ONYXIA_FURY			= "奥妮克希亚";
 BOSS_STRAT_BARON_RIVENDERE_FURY		= "瑞文戴尔男爵";
 
+MODE_HEADER_SINGLE = "单体输出";
 MODE_HEADER_AOE				= "AoE";
 MODE_HEADER_DEBUFF			= "Debuff";
 SLASH_FURY_ENABLED			= "enabled";

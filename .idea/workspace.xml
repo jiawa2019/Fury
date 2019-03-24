@@ -21,29 +21,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Localization.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="44" column="23" selection-start-line="44" selection-end-line="44" selection-end-column="23" />
+            <state relative-caret-position="249">
+              <caret line="85" column="20" selection-start-line="85" selection-end-line="85" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bindings.xml">
+        <entry file="file://$PROJECT_DIR$/Fury.toc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            <state relative-caret-position="261">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Fury.lua">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IsMounted/localization.en.lua">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fury.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="988" column="42" lean-forward="true" selection-start-line="988" selection-start-column="42" selection-end-line="988" selection-end-column="42" />
-              <folding>
-                <marker date="1553414400100" expanded="true" signature="31998:32244" ph="..." />
-              </folding>
+            <state relative-caret-position="261">
+              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -53,9 +55,16 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IsMounted/localization.en.lua">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Fury.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="2432" column="28" selection-start-line="2432" selection-start-column="28" selection-end-line="2432" selection-end-column="28" />
+              <folding>
+                <marker date="1553420990749" expanded="true" signature="32232:32233" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -64,48 +73,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkLocation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.toc">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UnitHealth(&quot;target&quot;)</find>
-      <find>Fury_Configuration_Default</find>
-      <find>/fury</find>
-      <find>BINDING_NAME_FURY_WW</find>
-      <find>Whirlwind</find>
-      <find>enabled</find>
-      <find>Fury_Charge</find>
-      <find>whirlwind</find>
-      <find>ability Whirlwind</find>
-      <find>SLASH_FURY_AUTOATTACK</find>
-      <find>Fury_SlashCommand</find>
-      <find>Whirlwind</find>
-      <find>旋风斩</find>
-      <find>ABILITY_WHIRLWIND_FURY</find>
-      <find>SLASH_FURY_DISABLED</find>
-      <find>狂暴之</find>
-      <find>ABILITY_BERSERKER_RAGE_FURY</find>
-      <find>FURY_WW</find>
-      <find>ABILITY_HEROIC_STRIKE_FURY</find>
-      <find>abi</find>
-      <find>comm</find>
+      <find>MODE_HEADER_AOE</find>
+      <find>MODE_HEADER_SINGLE</find>
       <find>command</find>
-      <find>ABILITY_PIERCING_HOWL_FURY</find>
-      <find>ABILITY_PRIOR_BERSERKER_RAGE</find>
-      <find>ABILITY_HAMSTRING_FURY</find>
+      <find>FuryFrame</find>
+      <find>Fury_OnLoad</find>
+      <find>SLASH_FURY1</find>
+      <find>SlashCmdList</find>
+      <find>SLASH_FURY_ENABLED</find>
+      <find>Localization</find>
+      <find>single</find>
+      <find>ABILITY_WHIRLWIND_FURY</find>
+      <find>wi</find>
       <find>PRIOR_BERSERKER_RAGE</find>
-      <find>health</find>
-      <find>Fury_Configuration</find>
-      <find>UnitHealth</find>
-      <find>currentHealth</find>
+      <find>mana</find>
+      <find>b</find>
+      <find>== 3</find>
+      <find>血腥狂暴</find>
+      <find>狂暴</find>
+      <find>血型</find>
+      <find>血性狂暴</find>
+      <find>event</find>
+      <find>player_enter</find>
+      <find>lastHealth</find>
+      <find>造成</find>
+      <find>CHAT_WHIRLWIND_FURY</find>
+      <find>CHAT_OVERPOWER2_FURY</find>
+      <find>Fury_OnEvent</find>
+      <find>arg1</find>
+      <find>nil</find>
+      <find>not</find>
     </findStrings>
     <replaceStrings>
       <replace>PRIOR_BERSERKER_RAGE</replace>
@@ -150,11 +165,6 @@
             <path>
               <item name="Fury" type="b2602c69:ProjectViewProjectNode" />
               <item name="Fury" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Fury" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Fury" type="462c0819:PsiDirectoryNode" />
-              <item name="IsMounted" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -214,16 +224,15 @@
       <workItem from="1553238251631" duration="659000" />
       <workItem from="1553256889277" duration="1047000" />
       <workItem from="1553304719185" duration="4647000" />
-      <workItem from="1553388674563" duration="6405000" />
+      <workItem from="1553388674563" duration="11198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19836000" />
+    <option name="totallyTimeSpent" value="24629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3840" height="2160" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1577967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -316,59 +325,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Fury.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IsMounted/localization.de.lua">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IsMounted/localization.en.lua">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IsMounted/localization.fr.lua">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fury.toc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="307" column="38" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.toc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bindings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Localization.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="44" column="23" selection-start-line="44" selection-end-line="44" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -379,12 +339,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="307" column="38" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bindings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fury.toc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsMounted/localization.de.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsMounted/localization.fr.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsMounted/IsMounted.toc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fury.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IsMounted/localization.en.lua">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Localization.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="85" column="20" selection-start-line="85" selection-end-line="85" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Fury.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="988" column="42" lean-forward="true" selection-start-line="988" selection-start-column="42" selection-end-line="988" selection-end-column="42" />
+        <state relative-caret-position="382">
+          <caret line="2432" column="28" selection-start-line="2432" selection-start-column="28" selection-end-line="2432" selection-end-column="28" />
           <folding>
-            <marker date="1553414400100" expanded="true" signature="31998:32244" ph="..." />
+            <marker date="1553420990749" expanded="true" signature="32232:32233" ph="..." />
           </folding>
         </state>
       </provider>

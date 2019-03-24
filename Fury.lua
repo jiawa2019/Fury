@@ -61,6 +61,9 @@ local function Fury_Configuration_Init()
 	if Fury_Configuration["DemoDiff"] == nil then
 		Fury_Configuration["DemoDiff"] = 7 -- When level difference is greater don't do Demoralizing Shout
 	end
+	if Fury_Configuration[MODE_HEADER_SINGLE] == nil then
+		Fury_Configuration[MODE_HEADER_SINGLE] = false -- Disable auto use of aoe (Disables OP, HS, BT, Exe, Enablse Cleave, Whirlwind)
+	end
 	if Fury_Configuration[MODE_HEADER_AOE] == nil then
 		Fury_Configuration[MODE_HEADER_AOE] = false -- Disable auto use of aoe (Disables OP, HS, BT, Exe, Enablse Cleave, Whirlwind)
 	end
@@ -218,6 +221,7 @@ local function Fury_Configuration_Default()
 	Fury_Configuration["PrimaryStance"] = false
 	Fury_Configuration["DebugChannel"] = nil
 	Fury_Configuration[MODE_HEADER_AOE] = false
+	Fury_Configuration[MODE_HEADER_SINGLE] = false
 	Fury_Configuration[MODE_HEADER_DEBUFF] = false
 	Fury_Configuration[ABILITY_BATTLE_SHOUT_FURY] = true
 	Fury_Configuration[RACIAL_BERSERKING_FURY] = true
@@ -984,13 +988,6 @@ function Fury()
 
 		-- 6, Use Berserker rage to interrupt fears and ....
 
-		elseif Fury_Configuration[PRIOR_BERSERKER_RAGE]
-			and ActiveStance() == 3
-			and currentHealth < lastHealth
-			and SpellReadyIn(ABILITY_BERSERKER_RAGE_FURY) == 0 then
-			CastSpellByName(ABILITY_BERSERKER_RAGE_FURY)
-			lastHealth = currentHealth
-
 		elseif Fury_Configuration[ABILITY_BERSERKER_RAGE_FURY]
 		  and (FuryIncapacitate
 		  or FuryFear)
@@ -1274,7 +1271,7 @@ function Fury()
 			CastSpellByName(ABILITY_BERSERKER_RAGE_FURY)
 
 		-- 20, Stance dance
-	elseif Fury_Configuration["PrimaryStance"]
+		elseif Fury_Configuration["PrimaryStance"]
 		  and Fury_Configuration["PrimaryStance"] ~= false
 		  and not FuryOldStance
 		  and not FuryDanceDone
@@ -1646,7 +1643,14 @@ function Fury()
 				--Debug("50. Rage: "..tostring(UnitMana("player")))
 				FuryRageDumped = true
 			end
+		elseif Fury_Configuration[PRIOR_BERSERKER_RAGE]
+				and ActiveStance() == 3
+				and currentHealth < lastHealth
+				and SpellReadyIn(ABILITY_BERSERKER_RAGE_FURY) == 0 then
+			CastSpellByName(ABILITY_BERSERKER_RAGE_FURY)
+			lastHealth = currentHealth
 		end
+
 
 	end
 end
@@ -2081,6 +2085,27 @@ function Fury_SlashCommand(msg)
 	if command == nil
 	  or command == "" then
 		Fury()
+
+	elseif command == "single" then
+		toggleOption(MODE_HEADER_SINGLE, MODE_HEADER_SINGLE)
+		if(MODE_HEADER_SINGLE) then
+			Fury_Configuration[ABILITY_DEMORALIZING_SHOUT_FURY] = false
+			Fury_Configuration[ABILITY_WHIRLWIND_FURY] = false
+			Fury_Configuration[ABILITY_CLEAVE_FURY] = false
+			Fury_Configuration[ABILITY_PIERCING_HOWL_FURY] = false
+			Fury_Configuration[ABILITY_SWEEPING_STRIKES_FURY] = false
+			Fury_Configuration[ABILITY_THUNDER_CLAP_FURY] = false
+		else
+			Fury_Configuration[ABILITY_DEMORALIZING_SHOUT_FURY] = true
+			Fury_Configuration[ABILITY_WHIRLWIND_FURY] = true
+			Fury_Configuration[ABILITY_CLEAVE_FURY] = true
+			Fury_Configuration[ABILITY_PIERCING_HOWL_FURY] = true
+			Fury_Configuration[ABILITY_SWEEPING_STRIKES_FURY] = true
+			Fury_Configuration[ABILITY_THUNDER_CLAP_FURY] = true
+		end
+
+
+
 
 	elseif command == "charge" then
 		Fury_Charge()

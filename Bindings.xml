@@ -11,6 +11,9 @@
 	<Binding name="FURY_FBRF" header="FURY">
 		Fury_SlashCommand("br")
 	</Binding>
+	<Binding name="FURY_SINGLE" header="FURY">
+		Fury_SlashCommand("single")
+	</Binding>
 	<Binding name="FURY_THREAT" header="FURY">
 		Fury_SlashCommand("threat")
 	</Binding>
