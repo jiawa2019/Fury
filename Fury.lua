@@ -2078,6 +2078,9 @@ function Fury_SlashCommand(msg)
 	elseif command == "aoe" then
 		toggleOption(MODE_HEADER_AOE, MODE_HEADER_AOE)
 
+	elseif command == "whirlwind" then
+		toggleOption(ABILITY_WHIRLWIND_FURY, ABILITY_WHIRLWIND_FURY)
+
 	elseif command == "toggle" then
 		toggleOption("Enabled", BINDING_HEADER_FURY)
 
