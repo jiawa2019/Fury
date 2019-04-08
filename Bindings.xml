@@ -18,7 +18,7 @@
 		Fury_SlashCommand("threat")
 	</Binding>
 	<Binding name="FURY_DW" header="FURY">
-		Fury_SlashCommand("ability Death Wish")
+		Fury_SlashCommand("ability 死亡之愿")
 	</Binding>
 	<Binding name="FURY_CHARGE" header="FURY">
 		Fury_SlashCommand("charge")

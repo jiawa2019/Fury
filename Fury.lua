@@ -1289,11 +1289,12 @@ function Fury()
 		elseif Fury_Configuration[ABILITY_DISARM_FURY]
 		  and Weapon()
 		  and UnitIsPlayer("target")
-		  and (UnitClass("target") == CLASS_HUNTER_FURY
+		  and (
+--		UnitClass("target") == CLASS_HUNTER_FURY
 --		  or UnitClass("target") == CLASS_PALADIN_FURY
-		  or UnitClass("target") == CLASS_ROGUE_FURY
+		  UnitClass("target") == CLASS_ROGUE_FURY
 --		  or UnitClass("target") == CLASS_SHAMAN_FURY
---		  or UnitClass("target") == CLASS_WARRIOR_FURY
+		  or UnitClass("target") == CLASS_WARRIOR_FURY
 		)
 		  and UnitMana("player") >= 20
 		  and Fury_ImmuneDisarm[UnitName("target")] == nil
@@ -1643,14 +1644,13 @@ function Fury()
 				--Debug("50. Rage: "..tostring(UnitMana("player")))
 				FuryRageDumped = true
 			end
-		elseif Fury_Configuration[PRIOR_BERSERKER_RAGE]
-				and ActiveStance() == 3
-				and currentHealth < lastHealth
-				and SpellReadyIn(ABILITY_BERSERKER_RAGE_FURY) == 0 then
-			CastSpellByName(ABILITY_BERSERKER_RAGE_FURY)
-			lastHealth = currentHealth
+--		elseif Fury_Configuration[PRIOR_BERSERKER_RAGE]
+--				and ActiveStance() == 3
+--				and currentHealth < lastHealth
+--				and SpellReadyIn(ABILITY_BERSERKER_RAGE_FURY) == 0 then
+--			CastSpellByName(ABILITY_BERSERKER_RAGE_FURY)
 		end
-
+		lastHealth = currentHealth
 
 	end
 end
@@ -2105,6 +2105,10 @@ function Fury_SlashCommand(msg)
 		end
 
 
+	elseif command == "best" then
+
+		Fury_Configuration[ABILITY_HAMSTRING_FURY] = false
+		Fury_Configuration[ABILITY_PUMMEL_FURY] = false
 
 
 	elseif command == "charge" then
@@ -2287,7 +2291,7 @@ function Fury_SlashCommand(msg)
 		PrintEffects(target)
 
 	elseif command == "ability" then
-		if options == ABILITY_HEROIC_STRIKE_FURY
+		if options == ABIABILITY_HEROIC_STRIKE_FURYLITY_HEROIC_STRIKE_FURY
 		  and not Fury_Configuration[ABILITY_HEROIC_STRIKE_FURY] then
 			Fury_Configuration[ABILITY_HEROIC_STRIKE_FURY] = true
 			Print(ABILITY_HEROIC_STRIKE_FURY .. " "..SLASH_FURY_ENABLED..".")
